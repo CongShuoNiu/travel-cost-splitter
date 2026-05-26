@@ -1,0 +1,60 @@
+// 小程序应用配置文件
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/trips/list",
+    "pages/trips/detail",
+    "pages/bills/list",
+    "pages/bills/add",
+    "pages/settlement/detail",
+    "pages/profile/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "行程分摊",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#999",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab-home.png",
+        "selectedIconPath": "images/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/trips/list",
+        "text": "出行",
+        "iconPath": "images/tab-trip.png",
+        "selectedIconPath": "images/tab-trip-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile-active.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "requiredPrivateInfos": [
+    "getUserInfo",
+    "getUserProfile"
+  ],
+  "permission": {
+    "scope.userInfo": {
+      "desc": "获取你的昵称、头像"
+    },
+    "scope.userLocation": {
+      "desc": "用于记录旅游位置"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
